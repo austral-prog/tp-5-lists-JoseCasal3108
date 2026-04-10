@@ -1,4 +1,7 @@
 # Ejercicio 3: Agregar elementos al principio y final
+from decorator import append
+from mistune.plugins.formatting import insert
+
 
 def add_elements(lista):
     """
@@ -10,4 +13,8 @@ def add_elements(lista):
     Returns:
         La lista modificada con los elementos agregados
     """
-    pass  # Reemplazar con tu implementación
+
+    lista.append("Yellow")
+    lista.insert(0, "Pink")
+
+    return lista
